@@ -22,6 +22,12 @@
     "plugin:@typescript-eslint/recommended"
   ],
 
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
     "import/no-unresolved": "error",
