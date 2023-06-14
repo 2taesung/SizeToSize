@@ -12,7 +12,8 @@ export default function Page() {
   return (
     <main>
       <Nav />
-      <h1>Hello, Home page!</h1>;
+      <h1>Hello, Home page!{process.env.NEXT_PUBLIC_DB_HOST}</h1>
+      <h1>Hello, Home page!</h1>
     </main>
   );
 }
