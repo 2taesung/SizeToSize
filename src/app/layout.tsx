@@ -1,4 +1,7 @@
+import StyledComponentsRegistry from '@src/lib/registry';
+
 import { Inter } from 'next/font/google';
+import { Normalize } from 'styled-normalize';
 // import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -26,7 +29,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
         <meta name="msapplication-TileColor" content="#FF98BA" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
