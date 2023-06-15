@@ -1,8 +1,11 @@
 'use client';
 
 import Nav from '@src/components/Nav';
+import defaultTheme from '@src/styles/defaultTheme';
 
 import { useEffect } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Normalize } from 'styled-normalize';
 
 export default function Page() {
   useEffect(() => {
@@ -19,9 +22,11 @@ export default function Page() {
 
   return (
     <main>
+      <ThemeProvider theme={defaultTheme}>
+        <Normalize />
+        <h1>Hello, Home page!{process.env.NEXT_PUBLIC_PRODUCTION}</h1>
+      </ThemeProvider>
       <Nav />
-      <h1>Hello, Home page!{process.env.NEXT_PUBLIC_PRODUCTION}</h1>
-      <h1>Hello, Home page!</h1>
     </main>
   );
 }
