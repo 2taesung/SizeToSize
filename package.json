@@ -44,6 +44,8 @@
     "stylelint-order": "^6.0.3"
   },
   "lint-staged": {
-    "*.{ts, tsx}": "eslint --cache --fix"
+    "*.{js, ts, tsx}": [
+      "yarn format"
+    ]
   }
 }
