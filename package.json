@@ -45,8 +45,8 @@
   },
   "lint-staged": {
     "*.{ts, tsx}": [
-      "lint --cache --fix",
-      "lint:styled --cache --fix"
+      "lint --cache",
+      "lint:styled --cache"
     ]
   }
 }
