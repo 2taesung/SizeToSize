@@ -10,6 +10,9 @@
     "lint:styled": "stylelint './src/**/*.{ts,tsx}'",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{ts, tsx}": "yarn lint"
+  },
   "dependencies": {
     "@types/node": "20.2.5",
     "@types/react": "18.2.9",
@@ -42,8 +45,5 @@
     "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-order": "^6.0.3"
-  },
-  "lint-staged": {
-    "*.{ts, tsx}": "yarn lint"
   }
 }
