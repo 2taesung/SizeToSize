@@ -3,6 +3,8 @@
 
 echo "======= start pre-commit husky ======="
 
+npx lint-staged
+
 yarn lint
 
 yarn lint:styled
