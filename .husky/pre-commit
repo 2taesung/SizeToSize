@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo "======= start pre-commit husky ======="
+
 yarn lint
+
+yarn lint:styled
+
+echo "======= end pre-commit husky ======="

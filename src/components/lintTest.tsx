@@ -28,6 +28,4 @@ const Container = styled.div`
   border: solid 10px black;
 
   background-color: aqua;
-
-  color: ${props => props.theme.colors.primary};
 `;

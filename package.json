@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:styled": "stylelint './src/**/*.{ts,tsx}'"
+    "lint:styled": "stylelint './src/**/*.{ts,tsx}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.2.5",
