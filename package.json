@@ -44,6 +44,6 @@
     "stylelint-order": "^6.0.3"
   },
   "lint-staged": {
-    "*.{ts, tsx}": "eslint --cache"
+    "*.{ts, tsx}": "lint --cache"
   }
 }
