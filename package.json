@@ -31,6 +31,7 @@
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
     "next-compose-plugins": "^2.2.1",
     "postcss": "^8.4.24",
     "postcss-styled-syntax": "^0.4.0",
