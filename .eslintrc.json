@@ -29,6 +29,7 @@
   },
 
   "rules": {
+    "no-console": "warn",
     "@typescript-eslint/no-unused-vars": "error",
     "import/no-unresolved": "error",
     "react/self-closing-comp": [

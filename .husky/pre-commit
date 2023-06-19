@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "--------start precommit hooks--------"
+
+npx lint-staged
+
+yarn lint && yarn lint:styled
+
+echo "--------end precommit hooks--------"

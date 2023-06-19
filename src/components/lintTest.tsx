@@ -19,6 +19,7 @@ export const TestLint = () => {
         production env:{process.env.NEXT_PUBLIC_TEST_PRODUCTION || '없음'}
       </h1>
       <div>프리텐다드</div>
+      <div>git hooks test2</div>
     </Container>
   );
 };
@@ -28,6 +29,4 @@ const Container = styled.div`
   border: solid 10px black;
 
   background-color: aqua;
-
-  color: ${props => props.theme.colors.primary};
 `;
