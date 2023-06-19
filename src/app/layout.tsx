@@ -1,8 +1,6 @@
 import StyledComponentsRegistry from '@src/lib/registry';
 
 import { Inter } from 'next/font/google';
-import { Normalize } from 'styled-normalize';
-// import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 

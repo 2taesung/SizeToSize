@@ -1,0 +1,14 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-concentric-order"],
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "customSyntax": "@stylelint/postcss-css-in-js",
+      "rules": {
+        "color-no-invalid-hex": true,
+        "at-rule-no-unknown": null,
+        "font-family-no-missing-generic-family-keyword": null
+      }
+    }
+  ]
+}
