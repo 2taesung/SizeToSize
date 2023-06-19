@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:styled": "stylelint './src/**/*.{ts,tsx}'"
+    "lint:styled": "stylelint './src/**/*.{ts,tsx}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.2.5",
@@ -41,5 +42,8 @@
     "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-order": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": "eslint --cache --fix"
   }
 }
