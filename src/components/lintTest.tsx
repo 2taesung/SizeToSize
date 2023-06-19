@@ -19,7 +19,7 @@ export const TestLint = () => {
         production env:{process.env.NEXT_PUBLIC_TEST_PRODUCTION || '없음'}
       </h1>
       <div>프리텐다드</div>
-      <div>git hooks test</div>
+      <div>git hooks tes</div>
     </Container>
   );
 };
