@@ -42,5 +42,8 @@
     "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-standard": "^33.0.0",
     "stylelint-order": "^6.0.3"
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": "yarn lint"
   }
 }
