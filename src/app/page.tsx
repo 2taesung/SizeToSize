@@ -6,20 +6,17 @@ import { useEffect } from 'react';
 
 export default function Page() {
   useEffect(() => {
-    console.log('여기');
-  }, []);
-
-  useEffect(() => {
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker
-        .register('/service-worker.js')
-        .then(registration => console.log('scope is: ', registration.scope));
+      // navigator.serviceWorker.register('/service-worker.js');
     }
   }, []);
 
   return (
     <main>
-      <h1>Hello, Home page!{process.env.NEXT_PUBLIC_PRODUCTION}</h1>
+      <h1>development env:{process.env.NEXT_PUBLIC_TEST_DEV || '없음'}</h1>
+      <h1>
+        production env:{process.env.NEXT_PUBLIC_TEST_PRODUCTION || '없음'}
+      </h1>
       <Nav />
     </main>
   );

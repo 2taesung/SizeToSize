@@ -1,12 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "======= start pre-commit husky ======="
+echo "====== start pre-commit by husky ======"
 
-npx lint-staged
+lint_output=$(yarn lint)
 
-yarn lint
+# eslint 경고가 있는지 및 "Warning" 단어 확인
+if  echo "$lint_output" | grep -q "Warning"; then
+  echo "eslint warning이 발생했습니다. 커밋을 취소합니다."
+  echo "$lint_output"
+  echo "====== failed pre-commit by husky ======"
+  exit 1
+fi
 
-yarn lint:styled
-
-echo "======= end pre-commit husky ======="
+echo "====== end pre-commit by husky ======"

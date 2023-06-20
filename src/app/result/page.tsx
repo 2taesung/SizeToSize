@@ -2,8 +2,6 @@
 
 import { Test } from './styled';
 
-import { TestLint } from '@src/components/lintTest';
-
 import { styled } from 'styled-components';
 
 export default function Page() {
@@ -11,7 +9,6 @@ export default function Page() {
     <Container>
       <div>result page</div>
       <Test />
-      <TestLint />
     </Container>
   );
 }
