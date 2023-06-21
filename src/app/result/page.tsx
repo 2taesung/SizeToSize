@@ -2,12 +2,18 @@
 
 import { Test } from './styled';
 
+import { countAtom } from '@src/lib/atoms';
+
+import { useAtomValue } from 'jotai';
 import { styled } from 'styled-components';
 
 export default function Page() {
+  const count = useAtomValue(countAtom);
+
   return (
     <Container>
       <div>result page</div>
+      {count}
       <Test />
     </Container>
   );
