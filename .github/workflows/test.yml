@@ -1,4 +1,4 @@
-name: E2E Tests - Playwright
+name: E2E, Unit Tests - Playwright, Jest&&RTL
 on:
   push:
     branches: [main, master]
@@ -13,10 +13,10 @@ jobs:
           node-version: 18.16.0
       - name: Install dependencies
         run: yarn
-      - name: Install Playwright Browsers
-        run: yarn playwright install --with-deps
+      - name: Run Jest&&RTL tests
+        run: yarn jest
       - name: Run Playwright tests
-        run: yarn playwright test
+        run: yarn test:e2e
       - uses: actions/upload-artifact@v3
         if: always()
         with:
