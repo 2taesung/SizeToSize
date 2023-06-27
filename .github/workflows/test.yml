@@ -16,7 +16,7 @@ jobs:
       - name: Run Jest&&RTL tests
         run: yarn jest
       - name: Install Playwright
-        run: yarn globall add playwright
+        run: yarn add playwright
       - name: Run Playwright tests
         run: yarn test:e2e
       - uses: actions/upload-artifact@v3
