@@ -9,7 +9,7 @@
     "lint": "next lint",
     "lint:styled": "stylelint './src/**/*.{ts,tsx}'",
     "prepare": "husky install",
-    "test": "jest --watch",
+    "test": "jest --watchAll",
     "test:e2e": "playwright test"
   },
   "dependencies": {
