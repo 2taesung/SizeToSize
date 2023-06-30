@@ -1,5 +1,6 @@
 'use client';
 import Nav from '@src/components/Nav';
+import Steppers from '@src/components/Steppers';
 import { countAtom } from '@src/lib/atoms';
 
 import { useAtom } from 'jotai';
@@ -20,14 +21,14 @@ export default function Page() {
 
   return (
     <main>
-      <h1>SizeToSize</h1>
-      <h1>development env:{process.env.NEXT_PUBLIC_TEST_DEV || '없음'}</h1>
+      <Nav />
+      <Steppers />
+      <p>development env:{process.env.NEXT_PUBLIC_TEST_DEV || '없음'}</p>
       <h1>
         production env:{process.env.NEXT_PUBLIC_TEST_PRODUCTION || '없음'}
       </h1>
       <button onClick={handleCount}>+</button>
       {count}
-      <Nav />
     </main>
   );
 }

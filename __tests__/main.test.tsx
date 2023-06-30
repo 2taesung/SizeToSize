@@ -5,11 +5,10 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 describe('Main', () => {
-  it('renders a heading', () => {
+  it('renders a heading', async () => {
     render(<Page />);
 
-    const h1Element = screen.getByText('SizeToSize');
-
-    expect(h1Element).toBeInTheDocument();
+    const titleElement = screen.getByText('SizeToSize');
+    expect(titleElement).toBeInTheDocument();
   });
 });
