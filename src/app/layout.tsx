@@ -1,13 +1,17 @@
 import StyledComponentsRegistry from '@src/lib/registry';
 
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import { Roboto } from 'next/font/google';
 
 export const metadata = {
   title: 'SizeToSize',
   description: 'You can find from size you have to size you will buy',
 };
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['300', '400', '500', '700'],
+});
 
 export default function RootLayout({
   children,
@@ -27,7 +31,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
         <meta name="msapplication-TileColor" content="#FF98BA" />
       </head>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
     </html>
