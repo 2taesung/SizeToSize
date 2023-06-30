@@ -8,7 +8,7 @@ describe('Main', () => {
   it('renders a heading', () => {
     render(<Page />);
 
-    const h1Element = screen.getByText('Main');
+    const h1Element = screen.getByText('SizeToSize');
 
     expect(h1Element).toBeInTheDocument();
   });

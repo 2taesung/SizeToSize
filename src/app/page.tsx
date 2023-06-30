@@ -20,7 +20,7 @@ export default function Page() {
 
   return (
     <main>
-      <h1>Main</h1>
+      <h1>SizeToSize</h1>
       <h1>development env:{process.env.NEXT_PUBLIC_TEST_DEV || '없음'}</h1>
       <h1>
         production env:{process.env.NEXT_PUBLIC_TEST_PRODUCTION || '없음'}
