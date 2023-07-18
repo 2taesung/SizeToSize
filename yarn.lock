@@ -2937,6 +2937,13 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
+cssstyle@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-3.0.0.tgz#17ca9c87d26eac764bb8cfd00583cff21ce0277a"
+  integrity sha512-N4u2ABATi3Qplzf0hWbVCdjenim8F3ojEXpBDF5hBpjzW182MjNGLqfmQ0SkSPeQ+V86ZXgeH8aXj6kayd4jgg==
+  dependencies:
+    rrweb-cssom "^0.6.0"
+
 csstype@^3.0.2, csstype@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
@@ -6007,6 +6014,11 @@ rollup@^2.43.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
+rrweb-cssom@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/rrweb-cssom/-/rrweb-cssom-0.6.0.tgz#ed298055b97cbddcdeb278f904857629dec5e0e1"
+  integrity sha512-APM0Gt1KoXBz0iIkkdB/kfvGOwC4UuJFeG/c+yV7wSc7q96cG/kJ0HiYCnzivD9SB53cLV1MlHFNfOuPaadYSw==
+
 run-applescript@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/run-applescript/-/run-applescript-5.0.0.tgz#e11e1c932e055d5c6b40d98374e0268d9b11899c"
@@ -6453,6 +6465,17 @@ stylelint-order@^6.0.3:
   dependencies:
     postcss "^8.4.21"
     postcss-sorting "^8.0.2"
+
+stylelint-styled-components-order@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/stylelint-styled-components-order/-/stylelint-styled-components-order-1.0.4.tgz#0c561492ddbb69a9098a71287933cb55faf4b136"
+  integrity sha512-bC7CpNBQGbqqZXoxQ0rgha3zwoGA1N+pgHXbOMsOkAo2BwaB/kPtVIm+XGvXsyF9L3MJaUCXQ7ADe+QmC9T8JA==
+  dependencies:
+    "@stylelint/postcss-css-in-js" "^0.38.0"
+    postcss "^8.4.24"
+    postcss-styled-syntax "^0.4.0"
+    postcss-syntax "^0.36.2"
+    stylelint-order "^6.0.3"
 
 stylelint@^15.7.0:
   version "15.9.0"

@@ -39,6 +39,7 @@
     "@testing-library/react": "^14.0.0",
     "@typescript-eslint/eslint-plugin": "^5.59.9",
     "@typescript-eslint/parser": "^5.59.9",
+    "cssstyle": "^3.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
     "eslint-plugin-import": "^2.27.5",
@@ -53,6 +54,7 @@
     "stylelint": "^15.7.0",
     "stylelint-config-concentric-order": "^5.1.0",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-order": "^6.0.3"
+    "stylelint-order": "^6.0.3",
+    "stylelint-styled-components-order": "^1.0.4"
   }
 }
